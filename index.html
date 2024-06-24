@@ -22,6 +22,9 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -31,7 +34,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0" data-aos="zoom-in-right">
                 <img src="img/Logo_Vito 3.png" alt="Logo_Cursinho" title="Cursinho Vito Giannoti">
                 <!-- <h1 class="m-0 display-4 text-uppercase text-white">Cursinho</h1> -->
             </a>
@@ -39,22 +42,23 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="navbar-nav ml-auto p-4" data-aos="zoom-in-left">
+                    <a href="index.html" class="nav-item nav-link active" >Home</a>
                     <a href="about.html" class="nav-item nav-link">Sobre</a>
-                    <a href="service.html" class="nav-item nav-link">Service</a>
-                    <a href="menu.html" class="nav-item nav-link">Menu</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contato</a>
                         <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.html" class="dropdown-item">Reservation</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="" class="dropdown-item">WhatsApp</a>
+                            <a href="" class="dropdown-item">E-mail</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contato</a>
                 </div>
             </div>
         </nav>
+        <div class="centered-titles" >
+            <h1 class="title" data-aos="zoom-in-right">CURSINHO POPULAR</h1>
+            <h1 class="subtitle text-danger" data-aos="zoom-in-left">VITO GIANNOTI</h1>
+        </div>
     </div>
     <!-- Navbar End -->
 
@@ -63,7 +67,7 @@
         <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/bg_1.jpeg" alt="Image">
+                    <img class="w-100" src="img/5920.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="display-3 text-primary font-weight-medium m-0">A</h2>
                         <h1 class="display-1 text-white m-0">Educação</h1>
@@ -71,7 +75,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/bg_3.jpeg" alt="Image">
+                    <img class="w-100" src="img/5918.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class=" display-3 text-primary font-weight-medium m-0">A Educação</h2>
                         <h1 class="display-1 text-white m-0">É a base da</h1>
@@ -94,12 +98,12 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;">Sobre Nós</h4>
-                <h1 class="display-4 text-primary">Ensinando desde 2015</h1>
+                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;" data-aos="zoom-in-right">Sobre Nós</h4>
+                <h1 class="display-4 text-primary" data-aos="zoom-in-left">Ensinando desde 2015</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3 text-danger">Nossa História</h1>
+                    <h1 class="mb-3 text-danger" data-aos="flip-up">Nossa História</h1>
                     <h5 class="mb-3">Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea</h5>
                     <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod</p>
                     <a href="about.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Saiba mais</a>
@@ -110,7 +114,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3 text-danger">Nossa Visão</h1>
+                    <h1 class="mb-3 text-danger" data-aos="flip-up">Nossa Visão</h1>
                     <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
                     <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
                     <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
@@ -127,53 +131,53 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;">Nossos Diferenciais</h4>
-                <h1 class="display-4 text-primary">Se sinta em casa</h1>
+                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;" data-aos="zoom-in-right">Nossos Diferenciais</h4>
+                <h1 class="display-4 text-primary" data-aos="zoom-in-left">Se sinta em casa</h1>
             </div>
             <div class="row">
-                <div class="col-lg-6 mb-5">
+                <div class="col-lg-6 mb-5" data-aos="fade-right">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid rounded-circle mb-sm-0" src="img/diferencial_2.jpg" alt="">
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7" >
                             <h4><i class="fa fa-heartbeat service-icon"></i>Amamos ensinar</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                                 invidunt, dolore tempor diam ipsum takima erat tempor</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="col-lg-6 mb-5" data-aos="fade-left" data-aos-delay="2000ms">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid rounded-circle mb-3 mb-sm-0" src="img/diferencial_4.jpg" alt="">
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7" >
                             <h4><i class="fa fa-coffee service-icon"></i>Café não faltará</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                                 invidunt, dolore tempor diam ipsum takima erat tempor</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="col-lg-6 mb-5" data-aos="fade-right" data-aos-delay="2000ms">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/" alt="">
+                            <img class="img-fluid rounded-circle mb-3 mb-sm-0" src="img/diferencial_3.jpg" alt="">
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7" >
                             <h4><i class="fa fa-award service-icon"></i>Professores qualificados</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                                 invidunt, dolore tempor diam ipsum takima erat tempor</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="col-lg-6 mb-5" data-aos="fade-left" data-aos-delay="2000ms">
                     <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/" alt="">
+                        <div class="col-sm-5" >
+                            <img class="img-fluid rounded-circle mb-3 mb-sm-0" src="img/diferencial_1.jpg" alt="">
                         </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-book service-icon"></i>Materiais Atualizados</h4>
+                        <div class="col-sm-7" >
+                            <h4><i class="fa fa-book service-icon"></i>Materiais 100% Atualizados</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                                 invidunt, dolore tempor diam ipsum takima erat tempor</p>
                         </div>
@@ -185,95 +189,77 @@
     <!-- Service End -->
 
 
-    <!-- Offer Start -->
-    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
-        <div class="container py-5">
-            <h1 class="display-3 text-primary mt-3">50% OFF</h1>
-            <h1 class="text-white mb-3">Sunday Special Offer</h1>
-            <h4 class="text-white font-weight-normal mb-4 pb-3">Only for Sunday from 1st Jan to 30th Jan 2045</h4>
-            <form class="form-inline justify-content-center mb-4">
-                <div class="input-group">
-                    <input type="text" class="form-control p-4" placeholder="Your Email" style="height: 60px;">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary font-weight-bold px-4" type="submit">Sign Up</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- Offer End -->
-
-
     <!-- Menu Start -->
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
-                <h1 class="display-4 text-primary">Competitive Pricing</h1>
+                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;" data-aos="zoom-in-right">Horários e Turmas</h4>
+                <h1 class="display-4 text-primary" data-aos="zoom-in-left">Extensivo e Intensivo</h1>
+                <p>Extensivo começa geralmente no começo do ano. Já o intensivo, abrimos turmas no segundo semestre</p>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="mb-5">Hot Coffee</h1>
-                    <div class="row align-items-center mb-5">
+                    <h1 class="mb-5 text-danger" data-aos="fade-right">Extensivo</h1>
+                    <div class="row align-items-center mb-5" data-aos="fade-right">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
-                            <h5 class="menu-price">$5</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/study_1.jpg" alt="">
+                            <h5 class="menu-price">&#10004;</h5>
                         </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Black Coffee</h4>
+                        <div class="col-8 col-sm-9" >
+                            <h4>Tempo pra assimilar conteúdo</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-right">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
-                            <h5 class="menu-price">$7</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/study_2.jpg" alt="">
+                            <h5 class="menu-price">&#10004;</h5>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Chocolete Coffee</h4>
+                            <h4>Melhor Planejamento</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-right">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
-                            <h5 class="menu-price">$9</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/study_3.jpg" alt="">
+                            <h5 class="menu-price">&#10004;</h5>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Coffee With Milk</h4>
+                            <h4>Ritmo de Estudos Controlado</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="mb-5">Cold Coffee</h1>
+                    <h1 class="mb-5 text-danger" data-aos="fade-left">Intensivo</h1>
                     <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
-                            <h5 class="menu-price">$5</h5>
+                        <div class="col-4 col-sm-3" data-aos="fade-left">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/study_4.jpg" alt="">
+                            <h5 class="menu-price">&#10004;</h5>
                         </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Black Coffee</h4>
+                        <div class="col-8 col-sm-9" data-aos="fade-left">
+                            <h4>Foco Intenso</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-left">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
-                            <h5 class="menu-price">$7</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/study_5.jpg" alt="">
+                            <h5 class="menu-price">&#10004;</h5>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Chocolete Coffee</h4>
+                            <h4>Simulação do Ambiente de Prova</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5" data-aos="fade-left">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
-                            <h5 class="menu-price">$9</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/study_6.jpg" alt="">
+                            <h5 class="menu-price">&#10004;</h5>
                         </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Coffee With Milk</h4>
+                        <div class="col-8 col-sm-9" >
+                            <h4>Revisão Estratégica</h4>
                             <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
                         </div>
                     </div>
@@ -285,7 +271,7 @@
 
 
     <!-- Reservation Start -->
-    <div class="container-fluid my-5">
+    <div class="container-fluid my-5" data-aos="fade-up" data-aos-delay="1000ms">
         <div class="container">
             <div class="reservation position-relative overlay-top overlay-bottom">
                 <div class="row align-items-center">
@@ -294,8 +280,7 @@
                             <div class="mb-4">
                                 <h1 class="display-3 text-white">Faça sua matrícula</h1>
                             </div>
-                            <p class="text-white">Lorem justo clita erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                                ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea</p>
+                            <p class="text-white">Conheça nosso calendário de turmas desse ano:</p>
                             <ul class="list-inline text-white m-0">
                                 <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
                                 <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
@@ -306,29 +291,29 @@
                     <div class="col-lg-6">
                         <div class="text-center p-5" style="background: rgba(6, 18, 30, 0.596);">
                             <h1 class="text-white mb-4 mt-5">Entre em contato</h1>
-                            <form action="https://formsubmit.co/gabriel.aranda@hotmail.com" method="POST" class="form mb-5" id="myForm">
+                            <form action="https://formsubmit.co/contatocursinho@gmail.com" method="POST" class="form mb-5" id="myForm">
                                 <div class="input_group form-group">
                                     <label for="name" class="text-white">Nome:</label>
-                                    <input type="text" name="name" id="name" class="form-control bg-transparent border-primary p-4"/>
-                                    <div class="error-message" id="name-error"></div>
+                                    <input type="text" name="name" id="name" class="form-control bg-transparent border-primary p-4 text-white"/>
+                                    <div class="error-message text-white" id="name-error"></div>
                                 </div>
                         
                                 <div class="input_group form-group">
                                     <label for="email" class="text-white">Email:</label>
-                                    <input type="email" name="email" id="email" placeholder="fulano@email.com" class="form-control bg-transparent border-primary p-4" />
-                                    <div class="error-message" id="email-error"></div>
+                                    <input type="email" name="email" id="email" placeholder="fulano@email.com" class="form-control bg-transparent border-primary p-4 text-white" />
+                                    <div class="error-message text-white" id="email-error"></div>
                                 </div>
                         
                                 <div class="input_group form-group">
                                     <label for="subject" class="text-white">Assunto:</label>
-                                    <input type="text" name="subject" id="subject" class="form-control bg-transparent border-primary p-4"/>
-                                    <div class="error-message" id="subject-error"></div>
+                                    <input type="text" name="subject" id="subject" class="form-control bg-transparent border-primary p-4 text-white"/>
+                                    <div class="error-message text-white" id="subject-error"></div>
                                 </div>
                         
                                 <div class="input_group form-group">
                                     <label for="message" class="text-white">Mensagem:</label>
-                                    <textarea name="message" id="message" class="form-control bg-transparent border-primary p-4"></textarea>
-                                    <div class="error-message" id="message-error"></div>
+                                    <textarea name="message" id="message" class="form-control bg-transparent border-primary p-4 text-white"></textarea>
+                                    <div class="error-message text-white" id="message-error"></div>
                                 </div>
                         
                                 <input type="hidden" name="_captcha" value="false" />
@@ -352,8 +337,8 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;">Nossos fundadores</h4>
-                <h1 class="display-4 text-primary">Conheça alguns dos fundadores/professores</h1>
+                <h4 class="text-danger text-uppercase" style="letter-spacing: 5px;" data-aos="zoom-in-right">Nossos fundadores</h4>
+                <h1 class="display-4 text-primary" data-aos="zoom-in-left">Conheça alguns dos fundadores/professores</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
@@ -407,29 +392,31 @@
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Conheça nossas unidades</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Rua Gravi, 60 - Ao lado do metrô Praça da Árvore</p>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Rua Dr. Raul da Rocha Medeiros, 170 - Ao lado do Metrô Carrão</p>
+                <a href="https://www.google.com/maps?q=Rua+Gravi,+60+-+Sao+Paulo" target="_blank" rel="noopener noreferrer"><p class="text-white"><i class="fa fa-map-marker-alt mr-2"></i>Rua Gravi, 60 - Ao lado do metrô Praça da Árvore</p></a>
+                <a href="https://www.google.com/maps?q=Rua+Dr.+Raul+da+Rocha+Medeiros,+170+-+Sao+Paulo" target="_blank" rel="noopener noreferrer"><p class="text-white"><i class="fa fa-map-marker-alt mr-2"></i>Rua Dr. Raul da Rocha Medeiros, 170 - Ao lado do Metrô Carrão</p></a>
 
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p class="m-0"><i class="fa fa-envelope mr-2"></i>cursinho@vito.com</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+55 11 5581-8727</p>
+                <a href="mailto:contatocursinho@gmail.com">
+                    <p class="m-0 text-white"><i class="fa fa-envelope mr-2"></i>contatocursinho@gmail.com</p>
+                </a>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Nos siga</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-whatsapp"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fas fa-phone"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
                 <div>
-                    <h6 class="text-white text-uppercase">Monday - Friday</h6>
-                    <p>8.00 AM - 8.00 PM</p>
-                    <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
-                    <p>2.00 PM - 8.00 PM</p>
+                    <h6 class="text-white text-uppercase">Segunda - Sexta</h6>
+                    <p>19:00 - 22:30 PM</p>
+                    <h6 class="text-white text-uppercase">Sábado - Domingo</h6>
+                    <p>Acompanhe nas redes sociais</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -465,6 +452,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
